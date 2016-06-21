@@ -1,0 +1,8 @@
+<ul>
+    <?php foreach($this->view->articles as $article): ?>
+        <li>#<?= $article["id"]; ?>, <?= $article["title"]; ?></li>
+        <ul>
+            <li><p><?= $article["content"]; ?></p></li>
+        </ul>
+    <?php endforeach; ?>
+</ul>
